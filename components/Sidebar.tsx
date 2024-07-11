@@ -14,8 +14,8 @@ import {
 } from "@/components/ui/command"
 import React from "react";
 import StorageItem from "./ui/StorageItem";
-import { Button } from "./ui/button";
 import Link from "next/link";
+import FileBrowser from "./ui/File-browser";
 
 import { Home } from "lucide-react";
 import { Folder } from "lucide-react";
@@ -26,7 +26,6 @@ import { Contrast } from "lucide-react";
 import { MessageSquareDot } from "lucide-react";
 import { Settings } from "lucide-react";
 import { ChevronRight } from "lucide-react";
-import { EllipsisVertical } from "lucide-react";
 
 const menuList = [
     {
@@ -118,9 +117,7 @@ export default function Sidebar() {
                         <CommandGroup heading={
                             <div className="flex align-center justify-between items-center ">
                                 FILE BROWSER
-                                <Button variant="link" size="sm" className="flex items-center">
-                                    <EllipsisVertical className="text-gray-400 size-4 "/>
-                                </Button>
+                                <FileBrowser />
                             </div>
                         } >
                             <CommandItem className="flex gap-2 cursor-pointer">
