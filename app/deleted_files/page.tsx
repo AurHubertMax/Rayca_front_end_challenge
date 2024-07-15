@@ -1,8 +1,13 @@
+import React, { Suspense } from 'react';
+
 export default function DeletedFiles() {
     return (
-      <div>
-        deleted files
-      </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div>
+          deleted files
+        </div>
+      </Suspense>
+      
     );
 }
   
