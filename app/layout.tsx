@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import React, { Suspense } from 'react';
 
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/ui/Header";
@@ -22,12 +23,16 @@ export default function RootLayout({
       <body className={`${inter.className} flex items-start justify-between overflow-hidden`}>
         <Sidebar />
         <div className="bg-second m-3 rounded-lg w-full h-full">
-          <main className="w-full h-full p-7">
-          <div className="pr-5 pl-5">
-              <Header />
-              {children}
-            </div>
-          </main>
+          <Suspense fallback={<div>Loading...</div>}>
+            <main className="w-full h-full p-7">
+            <div className="pr-5 pl-5">
+                <Header />
+                
+                  {children}
+                
+              </div>
+            </main>
+          </Suspense>
         </div>
       </body>
     </html>
