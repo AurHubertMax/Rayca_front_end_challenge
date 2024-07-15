@@ -1,8 +1,12 @@
+import React, { Suspense } from 'react';
+
 export default function Design() {
     return (
-      <div>
-        design
-      </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div>
+          design
+        </div>
+      </Suspense>
     );
 }
   
