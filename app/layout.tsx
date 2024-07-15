@@ -19,12 +19,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex items-start justify-between`}>
+      <body className={`${inter.className} flex items-start justify-between overflow-hidden`}>
         <Sidebar />
-        <main className="w-full h-full p-7">
-          <Header />
-          {children}
-        </main>
+        <div className="bg-second m-3 rounded-lg w-full h-full">
+          <main className="w-full h-full p-7">
+          <div className="pr-5 pl-5">
+              <Header />
+              {children}
+            </div>
+          </main>
+        </div>
       </body>
     </html>
   );

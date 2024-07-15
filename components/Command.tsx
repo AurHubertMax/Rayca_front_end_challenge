@@ -22,15 +22,12 @@ import {
 import { useState } from "react"
   
 export function CommandDemo() {
-    const [open, setOpen] = useState<boolean>(false)
+    const [open, setOpen] = useState(false)
 
     return (
-        <Command className="rounded-lg border ">
+        <Command className="rounded-md border border-buttonborder">
         <CommandInput placeholder="Search" />
         <CommandList>
-            <CommandGroup>
-            {open && <CommandItem />}
-            </CommandGroup>
         </CommandList>
         </Command>
     )

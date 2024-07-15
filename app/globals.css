@@ -4,8 +4,50 @@
 
   @layer base {
     :root {
-      --background: 0 0% 100%;
-      --foreground: 224 71.4% 4.1%;
+      --background: 240 3% 13%;
+      --secondary-background: 240 4% 9%;
+      --separator: 240 2% 16%;
+
+      --text-main: 240 1% 82%;
+      --text-muted: 240 1% 46%;
+      --text-semi-muted: 240 1% 54%;
+      --text-green: 129, 16%, 48%;
+
+      /* sidebar command colors */
+      --command-background: 240, 4%, 9%;
+      --command-text: 240 2% 82%;
+      --command-hover-background: 240 2% 24%;
+
+      /* settings colors */
+      --icon-background: 240 1% 17%;
+      
+      /* button colors */
+      --button-background: 240 2% 16%;
+      --button-border: 240 2% 19%;
+      --button-secondary-background: 222 71% 57%;
+      --border: 220 13% 91%;
+      --input: 220 13% 91%;
+
+      /* progress colors */
+      --progress-background: 240 1% 41%;
+      --progress-foreground: 240 2% 82%;
+
+      /* switch colors */
+      --switch-checked-background: 222 71% 57%;
+      --switch-unchecked-background: 240 2% 82%;
+      --switch-thumb-background: 111, 37%, 96%;
+
+      /* circular progress colors */
+      --circular-progress-indicator: 222 71% 57%;
+      --circular-progress-track: 150, 2%, 22%;
+
+      /* untitled item colors */
+      --untitled-item-background: 221, 72%, 56%;
+      --untitled-item-circle1: 234, 72%, 89%;
+      --untitled-item-circle2: 222, 65%, 70%;
+    
+
+      --foreground: 240 2% 82%; /* majority of text colors */
       --card: 0 0% 100%;
       --card-foreground: 224 71.4% 4.1%;
       --popover: 0 0% 100%;
@@ -15,15 +57,14 @@
       --secondary: 220 14.3% 95.9%;
       --secondary-foreground: 220.9 39.3% 11%;
       --muted: 220 14.3% 95.9%;
-      --muted-foreground: 220 8.9% 46.1%;
-      --accent: 220 14.3% 95.9%;
-      --accent-foreground: 220.9 39.3% 11%;
+      --muted-foreground: 240 2% 82%; /* some text colors */
+      --accent: 240 2% 24%; /* hover overs */
+      --accent-foreground: 240 33% 99%;
       --destructive: 0 84.2% 60.2%;
       --destructive-foreground: 210 20% 98%;
-      --border: 220 13% 91%;
-      --input: 220 13% 91%;
+      
       --ring: 224 71.4% 4.1%;
-      --radius: 0.5rem;
+      --radius: 0.7rem;
       --chart-1: 12 76% 61%;
       --chart-2: 173 58% 39%;
       --chart-3: 197 37% 24%;

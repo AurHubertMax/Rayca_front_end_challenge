@@ -8,7 +8,7 @@ export default function Settings() {
     return (
       <Tabs defaultValue="Security" className="w-full" >
         <TabsList>
-          <TabsTrigger value="general">General</TabsTrigger>
+          <TabsTrigger value="general" >General</TabsTrigger>
           <TabsTrigger value="Security">Security</TabsTrigger>
           <TabsTrigger value="Billing">Billing</TabsTrigger>
           <TabsTrigger value="Notifications">Notifications</TabsTrigger>

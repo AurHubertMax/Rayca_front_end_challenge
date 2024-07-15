@@ -12,7 +12,7 @@ export default function Security() {
     const [dismiss, setDismiss] = useState(true);
 
     return (
-        <div className="flex flex-col pt-7 gap-7">
+        <div className="flex flex-col pt-7 gap-6">
             <SecurityAlert />
             <Basics />
             <BrowsersAndDevices />

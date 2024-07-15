@@ -19,11 +19,49 @@ const config = {
     },
     extend: {
       colors: {
+        /* Common colors */
+        background: "hsl(var(--background))",
+        second: "hsl(var(--secondary-background))",
+        separator: "hsl(var(--separator))",
+
+        textMain: "hsl(var(--text-main))",
+        textMuted: "hsl(var(--text-muted))",
+        textSemiMuted: "hsl(var(--text-semi-muted))",
+        textGreen: "hsl(var(--text-green))",
+
+        ring: "hsl(var(--ring))",
+        
+        foreground: "hsl(var(--foreground))",
+        
+        /* settings colors */
+        iconbg: "hsl(var(--icon-background))",
+
+        /* Button colors */
+        buttonbg: "hsl(var(--button-background))",
+        buttonborder: "hsl(var(--button-border))",
+        buttonSecondarybg: "hsl(var(--button-secondary-background))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+
+        /* Progress colors */
+        progressbg: "hsl(var(--progress-background))",
+        progressfg: "hsl(var(--progress-foreground))",
+
+        /* switch colors */
+        switchCheckedbg: "hsl(var(--switch-checked-background))",
+        switchUncheckedbg: "hsl(var(--switch-unchecked-background))",
+        switchThumbbg: "hsl(var(--switch-thumb-background))",
+
+        /* circular progress colors */
+        cprogressIndicator: "hsl(var(--circular-progress-indicator))",
+        cprogressTrack: "hsl(var(--circular-progress-track))",
+
+        /* untitled item colors */
+        uitembg: "hsl(var(--untitled-item-background))",
+        uitemCircle1: "hsl(var(--untitled-item-circle1))",
+        uitemCircle2: "hsl(var(--untitled-item-circle2))",
+        
+
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
