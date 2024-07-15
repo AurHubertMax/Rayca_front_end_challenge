@@ -14,7 +14,6 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog";
 import { Switch } from "@/components/ui/switch";
-import { useState } from "react";
 
 
 export default function Basics() {
@@ -31,12 +30,12 @@ export default function Basics() {
                     <div className="font-bold text-xs text-textMain">
                         Password
                     </div>
-                    <div className="text-gray-400 text-xs text-textMuted font-semibold">
+                    <div className="text-xs text-textMuted font-semibold">
                         Set a password to protect your account
                     </div>
                 </div>
                 <div className="flex flex-row gap-3 items-center">
-                    <Input disabled={false} type="password" placeholder="****************************************" className="w-[50%] border-0 bg-transparent placeholder-textMain"/>
+                    <Input disabled={false} type="password" placeholder="****************************" className="w-[50%] border-0 bg-transparent placeholder-textMain"/>
                     <div className="flex flex-row items-center gap-1">
                         <CircleCheck color="#688f6e" strokeWidth={2} size={18}/>
                         <div className="text-xs text-textGreen font-medium tracking-tight">Very Secure</div>
@@ -50,7 +49,7 @@ export default function Basics() {
                         <DialogContent>
                             <DialogHeader>
                                 <DialogTitle>Edit password</DialogTitle>
-                                <DialogDescription>Make changes to your password here. Click save when you're done.</DialogDescription>
+                                <DialogDescription>Make changes to your password here. Click save when done.</DialogDescription>
                             </DialogHeader>
                             <Input type="password" placeholder="Enter new password" className="w-full"/>
                             <DialogFooter>
